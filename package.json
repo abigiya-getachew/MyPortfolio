@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:client": "pnpm --filter portfolio-client dev",
+    "dev:server": "pnpm --filter portfolio-server dev",
+    "build": "pnpm --filter portfolio-client build && pnpm --filter portfolio-server build",
+    "start": "pnpm --filter portfolio-server start",
+    "check": "pnpm --filter portfolio-client check && pnpm --filter portfolio-server check",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
+}
