@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Download, Menu, X } from "lucide-react";
 import AGLogo from "./AGLogo";
-import resumePdf from "../../assets/ABIGIYA_GETACHEW_ASSEFA_CV.pdf";
+import { resumePdf } from "./constants";
 
 const navItems = [
   { label: "About", href: "#about" },

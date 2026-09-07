@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "dev:client": "pnpm --filter portfolio-client dev",
-    "dev:server": "pnpm --filter portfolio-server dev",
-    "build": "pnpm --filter portfolio-client build && pnpm --filter portfolio-server build",
-    "start": "pnpm --filter portfolio-server start",
-    "check": "pnpm --filter portfolio-client check && pnpm --filter portfolio-server check",
+    "build": "pnpm --filter portfolio-client build",
+    "check": "pnpm --filter portfolio-client check",
     "format": "prettier --write ."
   },
   "devDependencies": {

@@ -1,20 +1,19 @@
 import { useState } from "react";
 import { ArrowUpRight, Check, Copy } from "lucide-react";
 import { toast } from "sonner";
-
-const EMAIL = "abigiya.getachew00@gmail.com";
+import { CONTACT_EMAIL } from "./constants";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(EMAIL);
+      await navigator.clipboard.writeText(CONTACT_EMAIL);
       setCopied(true);
       toast.success("Email copied to clipboard.");
       window.setTimeout(() => setCopied(false), 2400);
     } catch {
-      toast.error(`Please email ${EMAIL} directly.`);
+      toast.error(`Please email ${CONTACT_EMAIL} directly.`);
     }
   };
 
@@ -39,15 +38,14 @@ export default function Contact() {
             <em>something.</em>
           </h2>
           <p className="contact-intro">
-            I'm Abigiya — a full-stack and frontend developer who enjoys
-            building clean, purposeful web experiences. If you have a project,
+           If you have a project,
             an idea, or just want to connect, my inbox is open.
           </p>
         </div>
 
         <div className="contact-actions">
-          <a className="email-link" href={`mailto:${EMAIL}`}>
-            {EMAIL}
+          <a className="email-link" href={`mailto:${CONTACT_EMAIL}`}>
+            {CONTACT_EMAIL}
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
 
@@ -76,6 +74,7 @@ export default function Contact() {
               GitHub <ArrowUpRight size={13} aria-hidden="true" />
             </a>
           </div>
+
         </div>
       </div>
     </section>

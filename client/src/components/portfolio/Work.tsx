@@ -67,7 +67,7 @@ export default function Work() {
               <div className="project-image">
                 <span className="project-image-index" aria-hidden="true">{p.num}</span>
                 {p.image ? (
-                  <img src={p.image} alt={`${p.title} — screenshot`} />
+                  <img src={p.image} alt={`${p.title} — screenshot`} loading="lazy" decoding="async" />
                 ) : (
                   <div className={`project-placeholder project-placeholder-${p.num}`} role="img" aria-label={`${p.title} — project preview`}>
                     <div className="project-placeholder-inner">

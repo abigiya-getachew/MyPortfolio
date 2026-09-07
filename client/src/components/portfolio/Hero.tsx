@@ -1,5 +1,5 @@
 import { ArrowDownRight, Download } from "lucide-react";
-import resumePdf from "../../assets/ABIGIYA_GETACHEW_ASSEFA_CV.pdf";
+import { resumePdf } from "./constants";
 
 export default function Hero() {
   return (
@@ -11,17 +11,17 @@ export default function Hero() {
       </h1>
 
       <p className="hero-role">
-        <strong>React · Next.js · TypeScript</strong>
+        <strong>Software Engineer / Frontend Focus</strong>
       </p>
 
       <p className="hero-value">
-        Building accessible, WCAG-conscious interfaces — clean architecture,
-        fast delivery, from Addis Ababa.
+        Designing and building accessible, high-performance web products with
+        React, Next.js, and TypeScript from Addis Ababa.
       </p>
 
       <div className="hero-actions">
         <a className="btn btn-primary" href="#work">
-          View work <ArrowDownRight size={16} aria-hidden="true" />
+          View projects <ArrowDownRight size={16} aria-hidden="true" />
         </a>
         <a className="btn btn-outline" href={resumePdf} download aria-label="Download résumé PDF">
           Download resume <Download size={15} aria-hidden="true" />

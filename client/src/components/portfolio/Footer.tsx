@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-brand">
         <AGLogo size={20} />
-        <span>Abigiya Getachew Assefa</span>
+        <span>Abigiya Getachew</span>
       </div>
 
       <span>Built with attention · © 2026</span>

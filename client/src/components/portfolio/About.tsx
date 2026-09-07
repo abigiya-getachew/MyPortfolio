@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import resumePdf from "../../assets/ABIGIYA_GETACHEW_ASSEFA_CV.pdf";
+import { resumePdf } from "./constants";
 
 export default function About() {
   return (
@@ -19,21 +19,23 @@ export default function About() {
             <br />about the details.
           </h2>
           <p className="about-lead">
-            I'm Abigiya Getachew Assefa, a full-stack and frontend developer
-            based in Addis Ababa. I build interfaces that are fast, accessible,
-            and actually pleasant to use.
+            I'm Abigiya Getachew a software engineer based in Addis
+            Ababa, specializing in frontend product development and accessible
+            user interfaces.
           </p>
           <p className="about-copy">
-            My focus is on the frontend: React, Next.js, TypeScript, and a real
-            commitment to WCAG-conscious UI. I care about semantic markup,
-            keyboard navigation, and contrast ratios — not because a checklist
-            says so, but because they're what makes software usable for everyone.
-          </p>
-          <p className="about-copy">
-            On the backend I work with Node.js, Nest.js, PostgreSQL, and MongoDB.
-            I'm most comfortable owning a feature end-to-end, from database
-            schema to the pixel that lands on screen.
-          </p>
+  I build frontend interfaces with React, Next.js, and TypeScript. I care a
+  lot about the details most people skip: semantic HTML, keyboard
+  navigation, and making sure the site actually holds up under WCAG
+  guidelines, not just looks like it does. Good information architecture and
+  fast, reliable performance aren't extras to me; they're the baseline.
+</p>
+<p className="about-copy">
+  I don't stop at the interface, though. On full-stack projects I work across
+  Node.js, Nest.js, PostgreSQL, and MongoDB, designing the data models and
+  APIs, then building the UI that sits on top of them. I like owning a
+  feature end to end and seeing how the pieces actually connect.
+</p>
           <a
             className="text-link about-cv-link"
             href={resumePdf}
